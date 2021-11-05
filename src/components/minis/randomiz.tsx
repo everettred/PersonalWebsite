@@ -2,22 +2,29 @@ import React from "react";
 import { useState } from "react";
 
 const Randomize: React.FC = () => {
-  const [inputArray] = useState<string[]>([]);
+  const [inputArray, setInputArray] = useState<string[]>([]);
   const [randomInput, setRandomInput] = useState("");
-  const [randomSelected, setRandomSelected] = useState([]);
+  const [randomSelected, setRandomSelected] = useState("");
+
   let randomListDisplay = inputArray.map((e, i) => {
     return <section>{inputArray[i]}</section>;
   });
+
   let arrayAdd = () => {
     if (randomInput) {
       console.log("hit true");
-      return inputArray.push(randomInput);
+      setInputArray([...inputArray, randomInput]);
     }
   };
 
   let selector = (min: number, max: number) => {
-    return Math.random() * (max - min) + min;
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    let randomNumberInArray = Math.random() * (max - min) + min;
+    let selected = inputArray[Math.round(randomNumberInArray)];
+    setRandomSelected(selected);
   };
+
   return (
     <div>
       <section>

@@ -1,51 +1,48 @@
 #nav-background {
-  width: 270px;
-  height: 100vh;
-  background-color: #0a0a0a;
+  height: 120px;
+  background-color: #000000;
 }
 .nav-links {
-  position: relative;
-  top: 600px;
-  left: 30px;
-  height: 300px;
+  margin: 30px 90px 0px 0px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
 }
 .nav-link {
   text-decoration: none;
-  img {
-  }
   h1 {
     margin-top: 10px;
     font-family: monospace;
     color: white;
-    font-size: 50px;
-    transition: 0.3s;
+    font-size: 40px;
+    transition: 0.2s;
+    position: absolute;
+    cursor: pointer;
   }
   h1:hover {
-    color: rgb(187, 0, 0);
+    color: rgb(37, 200, 59);
+  }
+  h1:active {
+    font-size: 38px;
   }
 }
 
-@media screen and (max-width: 2400px) {
+//1440p standard size monitor
+@media screen and (min-width: 1900px) {
   #nav-background {
-    width: 210px;
+    height: 100px;
   }
 
-  .nav-links {
-    top: 35vh;
-  }
   .nav-link {
     h1 {
-      margin-top: 10px;
+      margin-top: 0px;
       font-family: monospace;
-      color: white;
+      color: rgb(255, 255, 255);
       font-size: 35px;
-      transition: 0.3s;
+      transition: 0.2s;
     }
-    h1:hover {
-      color: rgb(44, 0, 187);
+    h1:active {
+      font-size: 34px;
     }
   }
 }

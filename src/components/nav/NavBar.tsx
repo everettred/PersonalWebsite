@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavBar.scss";
 
 interface Props {
@@ -22,7 +22,7 @@ const NavBar: React.FC<Props> = (props) => {
         <section onClick={props.handleScrollClickProjects} className="nav-link">
           <h1>projects</h1>
         </section>
-        <section onClick={props.handleScrollClickContact} className="nav-link">
+        <section onClick={props.handleScrollClickProjects} className="nav-link">
           <h1>contact</h1>
         </section>
       </section>

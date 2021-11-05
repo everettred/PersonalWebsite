@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import Main from "./components/main/main";
 import About from "./components/about/about";
+import PlaceHolder from "./components/placeholder/placeholder";
 
 function App() {
   const homeRef = useRef<null | HTMLDivElement>(null);
@@ -37,11 +38,11 @@ function App() {
         <About />
       </section>
       <section ref={projectsRef}>
-        <Main />
+        <PlaceHolder />
       </section>
-      <section ref={contactRef}>
+      {/* <section ref={contactRef}>
         <Main />
-      </section>
+      </section> */}
     </section>
   );
 }

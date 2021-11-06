@@ -39,10 +39,10 @@
   flex-direction: column;
 }
 //1440p standard size monitor
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1999px) {
   .home-body {
     background-color: rgb(19, 19, 19);
-    height: 965px;
+    height: 1227px;
   }
 
   .intro-home {
@@ -51,15 +51,14 @@
     display: flex;
     justify-content: center;
     h1 {
-      font-size: 50px;
-
+      font-size: 70px;
       position: relative;
       right: 90px;
       top: 300px;
     }
     img {
-      border-radius: 5px;
-      width: 550px;
+      border-radius: 20px;
+      width: 650px;
     }
   }
   .typewriter {
@@ -69,7 +68,7 @@
   }
   .type-content {
     color: rgb(255, 255, 255);
-    font-size: 30px;
+    font-size: 40px;
     font-family: $primary-font;
   }
 

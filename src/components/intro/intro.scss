@@ -2,78 +2,72 @@
 @import "../scss/config";
 
 .home-body {
-  background-color: rgb(19, 19, 19);
-  height: 656px;
+  // background: linear-gradient(
+  //     179.86deg,
+  //     rgba(0, 0, 0, 0) 1.07%,
+  //     rgba(0, 0, 0, 0.189583) 22.53%,
+  //     rgba(35, 35, 35, 0.189583) 78.23%,
+  //     rgba(0, 0, 0, 0) 98.31%
+  //   ),
+  //   #1f1f1f;
+  background-image: url("../../assets/background-main.jpg");
+  background-color: #1f1f1f50;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-home {
-  margin-top: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  position: relative;
+  bottom: 50px;
+  height: 300px;
   h1 {
-    font-size: 50px;
-    font-family: $primary-font;
-    color: rgb(255, 255, 255);
-    position: relative;
-    right: 90px;
-    top: 200px;
+    font-size: 100px;
+    font-family: "Rowdies";
+    background: linear-gradient(200deg, #00ff22, #8eff84, #04ff3a, #9aff96);
+    background-size: 400% 400%;
+    background-clip: text;
+    color: rgba(0, 0, 0, 0);
+    height: 130px;
+    animation: gradient 5s ease infinite;
   }
-  img {
-    border-radius: 5px;
-    width: 380px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 .typewriter {
-  position: relative;
-  right: 90px;
-  top: 210px;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 .type-content {
   color: rgb(255, 255, 255);
   font-size: 30px;
-  font-family: $primary-font;
-}
-
-.home-sect1 {
-  display: flex;
-  flex-direction: column;
+  font-family: monospace;
 }
 //1440p standard size monitor
 @media screen and (min-width: 1999px) {
-  .home-body {
-    background-color: rgb(19, 19, 19);
-    height: 1227px;
-  }
-
   .intro-home {
-    margin-top: 80px;
-
     display: flex;
     justify-content: center;
     h1 {
-      font-size: 70px;
-      position: relative;
-      right: 90px;
-      top: 300px;
+      height: 190px;
+      font-size: 170px;
     }
-    img {
-      border-radius: 20px;
-      width: 650px;
-    }
-  }
-  .typewriter {
-    position: relative;
-    right: 90px;
-    top: 300px;
   }
   .type-content {
-    color: rgb(255, 255, 255);
     font-size: 40px;
-    font-family: $primary-font;
-  }
-
-  .home-sect1 {
-    display: flex;
-    flex-direction: column;
   }
 }

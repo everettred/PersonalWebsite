@@ -8,6 +8,7 @@ const Intro: React.FC = (props) => {
       <Typewriter
         options={{
           wrapperClassName: "type-content",
+          delay: 50,
           loop: true,
         }}
         onInit={(typewriter) => {

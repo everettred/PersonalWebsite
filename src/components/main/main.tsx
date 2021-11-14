@@ -5,17 +5,9 @@ import "../intro/intro.scss";
 const Main: React.FC = (props) => {
   return (
     <div className="home-body">
-      <section className="home-sect1">
-        <section className="intro-home">
-          <section>
-            <h1>Hello I'm Kelsey Dickerman.</h1>
-            <Intro />
-          </section>
-          <img
-            src="https://res.cloudinary.com/garagesellers/image/upload/v1634090474/profile_lojo9o.jpg"
-            alt="photo of me"
-          />
-        </section>
+      <section className="intro-home">
+        <h1>Kelsey Dickerman</h1>
+        <Intro />
       </section>
     </div>
   );

@@ -1,0 +1,14 @@
+.name-container {
+  background-color: #04ff3a;
+  width: 140px;
+  height: 35px;
+  border-radius: 0px 0px 10px 0px;
+  display: flex;
+  h1 {
+    font-family: monospace;
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+    left: 25px;
+  }
+}

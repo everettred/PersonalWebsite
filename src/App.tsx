@@ -11,9 +11,9 @@ function App() {
   const projectsRef = useRef<null | HTMLDivElement>(null);
   const contactRef = useRef<null | HTMLDivElement>(null);
 
-  // function handleScrollClickHome() {
-  //   homeRef?.current?.scrollIntoView({ behavior: "smooth" });
-  // }
+  function handleScrollClickHome() {
+    homeRef?.current?.scrollIntoView({ behavior: "smooth" });
+  }
   function handleScrollClickAbout() {
     aboutRef?.current?.scrollIntoView({ behavior: "smooth" });
   }
@@ -26,12 +26,15 @@ function App() {
 
   return (
     <section id="main">
-      <NavBar
-        handleScrollClickAbout={handleScrollClickAbout}
-        handleScrollClickProjects={handleScrollClickProjects}
-        handleScrollClickContact={handleScrollClickContact}
-      />
       <section ref={homeRef}>
+        <NavBar
+          handleScrollClickHome={handleScrollClickHome}
+          handleScrollClickAbout={handleScrollClickAbout}
+          handleScrollClickProjects={handleScrollClickProjects}
+          handleScrollClickContact={handleScrollClickContact}
+        />
+      </section>
+      <section>
         <Main />
       </section>
       <section ref={aboutRef}>

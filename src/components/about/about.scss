@@ -4,6 +4,7 @@
 .about-background {
   background-color: rgb(0, 0, 0);
   height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(
       290deg,
       rgba(19, 19, 19),
@@ -13,9 +14,9 @@
       rgba(0, 0, 0, 0.44)
     ),
     url("https://res.cloudinary.com/garagesellers/image/upload/v1635657504/pexels-pixabay-270360_wpjlmd.jpg");
+  display: flex;
   img {
-    width: 40%;
-    height: 100vh;
+    width: 41%;
   }
 }
 

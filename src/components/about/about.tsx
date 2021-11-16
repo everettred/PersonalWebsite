@@ -1,19 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./about.scss";
-import photo from "../../assets/download.jpg";
+import Contact from "./about.children/contact.component";
+import Bio from "./about.children/bio.component";
 
 const About: React.FC = () => {
   return (
     <div>
       <section className="about-background">
-        {/* <img src={photo}></img> */}
         <section>
-          <nav>
-            <button></button>
-            <button></button>
-          </nav>
-          <section></section>
-          <section></section>
+          {/* <section>THIS IS A BOX</section>
+          <section>THIS IS A BOX</section> */}
         </section>
       </section>
     </div>

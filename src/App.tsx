@@ -1,4 +1,4 @@
-import React, { useRef, forwardRef, useLayoutEffect } from "react";
+import React, { useRef, forwardRef } from "react";
 import "./App.css";
 import NavBar from "./components/nav/NavBar";
 import Main from "./components/main/main";
@@ -9,6 +9,8 @@ function App() {
   const homeRef = useRef<null | HTMLDivElement>(null);
   const aboutRef = useRef<null | HTMLDivElement>(null);
   const projectsRef = useRef<null | HTMLDivElement>(null);
+  //write a switch case that swaps betweens these functions
+  //the switchhas to take in the reference
 
   function handleScrollClickHome() {
     homeRef?.current?.scrollIntoView({ behavior: "smooth" });
@@ -29,15 +31,19 @@ function App() {
           handleScrollClickProjects={handleScrollClickProjects}
         />
       </section>
-      <section>
+
+      <section className="main-child">
         <Main />
       </section>
-      <section ref={aboutRef}>
+
+      <section className="main-child" ref={aboutRef}>
         <About />
       </section>
-      <section ref={projectsRef}>
+
+      <section className="main-child" ref={projectsRef}>
         <PlaceHolder />
       </section>
+
       {/* <section ref={contactRef}>
         <Main />
       </section> */}

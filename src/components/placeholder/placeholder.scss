@@ -3,20 +3,13 @@
 
 .place-holder {
   background-color: rgb(19, 19, 19);
-  height: 530px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   padding-top: 400px;
   h1 {
-    color: rgb(37, 200, 59);
+    color: $trim-clr;
     font-family: $primary-font;
     font-size: 50px;
-  }
-}
-
-@media screen and (min-width: 1999px) {
-  .place-holder {
-    background-color: rgb(19, 19, 19);
-    height: 965px;
   }
 }

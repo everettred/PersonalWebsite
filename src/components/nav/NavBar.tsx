@@ -6,7 +6,6 @@ interface Props {
   handleScrollClickHome: () => void;
   handleScrollClickAbout: () => void;
   handleScrollClickProjects: () => void;
-  handleScrollClickContact: () => void;
 }
 
 const NavBar: React.FC<Props> = (props) => {
@@ -28,12 +27,6 @@ const NavBar: React.FC<Props> = (props) => {
             className="nav-link"
           >
             <h1>projects</h1>
-          </section>
-          <section
-            onClick={props.handleScrollClickProjects}
-            className="nav-link"
-          >
-            <h1>contact</h1>
           </section>
         </section>
       </section>

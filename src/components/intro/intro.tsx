@@ -17,7 +17,7 @@ const Intro: React.FC = (props) => {
             .typeString("Full stack Web Developer.")
             .pauseFor(1000)
             .deleteAll()
-            .typeString("Welcome to my portfolio project!")
+            .typeString(`Welcome to "Everett Software Engineering and Design"`)
             .pauseFor(1000)
             .start();
         }}

@@ -1,13 +1,7 @@
 @import "../scss/utils";
 @import "../scss/config";
 
-#header-container {
-  position: absolute;
-  width: 100%;
-}
-
 .about-background {
-  border-top: 7px solid #04ff3a;
   background-color: rgb(0, 0, 0);
   height: 100vh;
   background-image: linear-gradient(
@@ -19,34 +13,12 @@
       rgba(0, 0, 0, 0.44)
     ),
     url("https://res.cloudinary.com/garagesellers/image/upload/v1635657504/pexels-pixabay-270360_wpjlmd.jpg");
-  h1 {
-    display: flex;
-    flex-direction: column;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    width: 700px;
-    margin: auto;
-    padding: 200px 100px 0px 100px;
-
-    text-align: center;
-    span {
-      margin-top: 10px;
-      font-size: 35px;
-    }
+  img {
+    width: 40%;
+    height: 100vh;
   }
 }
 
 ///1440p standard size monitor
 @media screen and (min-width: 1999px) {
-  .about-background {
-    background-color: rgb(0, 0, 0);
-    h1 {
-      width: 1000px;
-      font-size: 35px;
-      padding: 310px 100px 0 100px;
-      span {
-        font-size: 40px;
-      }
-    }
-  }
 }

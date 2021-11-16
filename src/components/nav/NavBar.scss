@@ -1,3 +1,6 @@
+@import "../scss/utils";
+@import "../scss/config";
+
 #nav-background {
   height: 80px;
   background: #1f1f1f00;
@@ -19,7 +22,7 @@
 }
 .nav-links {
   margin: 5px 5% 0px 0px;
-  width: 45%;
+  width: 35%;
   height: 100px;
   display: flex;
   justify-content: space-around;
@@ -40,7 +43,7 @@
     width: 0px;
     height: 3px;
     display: block;
-    background: rgb(72, 255, 0);
+    background: $trim-clr;
     transition: 300ms;
   }
 
